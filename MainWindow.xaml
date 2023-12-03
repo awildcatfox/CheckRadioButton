@@ -1,0 +1,96 @@
+﻿<Window
+    x:Class="CheckRadioButton.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:CheckRadioButton"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Canvas>
+        <CheckBox
+            x:Name="chkRaining"
+            Content="Is Raining"
+            HorizontalAlignment="Left"
+            Margin="121,92,0,0"
+            VerticalAlignment="Top" />
+        <CheckBox
+            x:Name="chkTimeSwnsitive"
+            Content="Is it Time Sensitive?"
+            HorizontalAlignment="Left"
+            Margin="121,126,0,0"
+            VerticalAlignment="Top" />
+        <CheckBox
+            x:Name="chkSocial"
+            Content="you got a social security card?"
+            HorizontalAlignment="Left"
+            Margin="121,162,0,0"
+            VerticalAlignment="Top" />
+        <Label
+            Content="What is your Favorite Color?"
+            Canvas.Left="438"
+            Canvas.Top="66" />
+        <RadioButton
+            x:Name="rbRed"
+            Content="Red"
+            Canvas.Left="438"
+            Canvas.Top="100"
+            GroupName="Color" />
+        <RadioButton
+            x:Name="rbBlue"
+            Content="Blue"
+            Canvas.Left="438"
+            Canvas.Top="129"
+            GroupName="Color" />
+        <RadioButton
+            x:Name="rbGreen"
+            Content="Green"
+            Canvas.Left="438"
+            Canvas.Top="155"
+            GroupName="Color" />
+        <Label
+            Content="What Kind of player are you ?"
+            Canvas.Left="157"
+            Canvas.Top="235" />
+        <RadioButton
+            x:Name="rbGrappler"
+            Content="Grappler"
+            Canvas.Left="159"
+            Canvas.Top="266"
+            GroupName="Player" />
+        <RadioButton
+            x:Name="rbRushDown"
+            Content="Rush Down"
+            Canvas.Left="159"
+            Canvas.Top="286"
+            GroupName="Player" />
+        <RadioButton
+            x:Name="rbZoner"
+            Content="Zoner"
+            Canvas.Left="159"
+            Canvas.Top="306"
+            GroupName="Player" />
+        <RichTextBox
+            Height="141"
+            Width="262"
+            Canvas.Top="235"
+            Canvas.Left="386"
+            >
+            <FlowDocument>
+                <Paragraph>
+                    <Run
+                        x:Name="rtbDisplay" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button
+            x:Name="btnDisplay"
+            Content="Display Information"
+            Canvas.Left="497"
+            Canvas.Top="394"
+            Click="btnDisplay_Click" />
+
+    </Canvas>
+</Window>
